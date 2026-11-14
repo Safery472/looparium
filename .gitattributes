@@ -1,0 +1,22 @@
+# Linux 脚本应当使用 LF
+/gradlew text eol=lf
+
+# Windows 脚本应当使用 CRLF
+*.bat text eol=crlf
+
+# 构建脚本默认使用 LF
+*.gradle.kts text eol=lf
+
+# 源代码文件默认使用 LF
+*.java text eol=lf
+
+# 配置文件默认使用 LF
+*.json text eol=lf
+*.properties text eol=lf
+*.md text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+
+# 二进制文件
+*.jar binary
+*.png binary

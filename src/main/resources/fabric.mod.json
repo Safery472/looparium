@@ -1,0 +1,42 @@
+{
+	"schemaVersion": 1,
+	"id": "looparium",
+	"version": "${version}",
+	"name": "Looparium",
+	"description": "A dimension mod with a liminal aesthetic.",
+	"authors": [
+		"Safery472"
+	],
+	"contact": {
+		"homepage": "https://github.com/Safery472/looparium",
+		"sources": "https://github.com/Safery472/looparium",
+		"issues": "https://github.com/Safery472/looparium/issues"
+	},
+	"license": "Apache-2.0",
+	"icon": "assets/looparium/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.safery472.looparium.Looparium"
+		],
+		"client": [
+			"net.safery472.looparium.client.LoopariumClient"
+		],
+		"fabric-datagen": [
+			"net.safery472.looparium.client.LoopariumDataGenerator"
+		]
+	},
+	"mixins": [
+		"looparium.mixins.json",
+		{
+			"config": "looparium.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": ">=0.116.12"
+	}
+}
